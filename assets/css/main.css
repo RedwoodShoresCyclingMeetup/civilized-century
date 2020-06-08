@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700");
 
 /*
 	Introspect by TEMPLATED
@@ -61,6 +61,21 @@
 
 	.light-gray {
 		background: #f3f3f3;
+	}
+	.houndstooth {
+		background:
+			linear-gradient(-45deg, white 25%, transparent 25%, transparent 75%, #eee 75%, #eee) 0 0,
+			linear-gradient(-45deg, #eee 25%, transparent 25%, transparent 75%, white 75%, white) 1em 1em,
+			linear-gradient(45deg, #eee 17%, transparent 17%, transparent 25%, #eee 25%, #eee 36%, transparent 36%, transparent 64%, #eee 64%, #eee 75%, transparent 75%, transparent 83%, #eee 83%) 1em 1em;
+		background-color: white;
+		background-size: 2em 2em;
+	}
+
+	.left {
+		text-align: left;
+	}
+	.right {
+		text-align: right;
 	}
 
 /* Box Model */
@@ -1950,7 +1965,7 @@
 		}
 
 			.button.special:hover {
-				background-color: #faa;
+				background-color: #ffe35f;
 				color: #444;
 			}
 
@@ -2568,70 +2583,38 @@
 				border-color: rgba(255, 255, 255, 0.15);
 			}
 
-			.wrapper.style2 input[type="submit"],
-			.wrapper.style2 input[type="reset"],
-			.wrapper.style2 input[type="button"],
-			.wrapper.style2 button,
 			.wrapper.style2 .button {
 				background-color: #ffffff;
 				color: #5a5a5a !important;
 			}
 
-				.wrapper.style2 input[type="submit"].alt,
-				.wrapper.style2 input[type="reset"].alt,
-				.wrapper.style2 input[type="button"].alt,
-				.wrapper.style2 button.alt,
 				.wrapper.style2 .button.alt {
 					background-color: transparent;
 					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.15);
 					color: #ffffff !important;
 				}
 
-					.wrapper.style2 input[type="submit"].alt:hover,
-					.wrapper.style2 input[type="reset"].alt:hover,
-					.wrapper.style2 input[type="button"].alt:hover,
-					.wrapper.style2 button.alt:hover,
 					.wrapper.style2 .button.alt:hover {
 						background: rgba(255, 255, 255, 0.5);
 					}
 
-					.wrapper.style2 input[type="submit"].alt:active,
-					.wrapper.style2 input[type="reset"].alt:active,
-					.wrapper.style2 input[type="button"].alt:active,
-					.wrapper.style2 button.alt:active,
 					.wrapper.style2 .button.alt:active {
 						background-color: rgba(255, 255, 255, 0.2);
 					}
 
-					.wrapper.style2 input[type="submit"].alt.icon:before,
-					.wrapper.style2 input[type="reset"].alt.icon:before,
-					.wrapper.style2 input[type="button"].alt.icon:before,
-					.wrapper.style2 button.alt.icon:before,
 					.wrapper.style2 .button.alt.icon:before {
 						color: #bdbdbd;
 					}
 
-				.wrapper.style2 input[type="submit"].special,
-				.wrapper.style2 input[type="reset"].special,
-				.wrapper.style2 input[type="button"].special,
-				.wrapper.style2 button.special,
 				.wrapper.style2 .button.special {
 					background-color: #c80000;
 					color: #ffffff !important;
 				}
 
-					.wrapper.style2 input[type="submit"].special:hover,
-					.wrapper.style2 input[type="reset"].special:hover,
-					.wrapper.style2 input[type="button"].special:hover,
-					.wrapper.style2 button.special:hover,
 					.wrapper.style2 .button.special:hover {
 						background-color: #e85d61;
 					}
 
-					.wrapper.style2 input[type="submit"].special:active,
-					.wrapper.style2 input[type="reset"].special:active,
-					.wrapper.style2 input[type="button"].special:active,
-					.wrapper.style2 button.special:active,
 					.wrapper.style2 .button.special:active {
 						background-color: #e23135;
 					}
@@ -2639,73 +2622,6 @@
 			.wrapper.style2 label {
 				color: #ffffff;
 			}
-
-			.wrapper.style2 input[type="text"],
-			.wrapper.style2 input[type="password"],
-			.wrapper.style2 input[type="email"],
-			.wrapper.style2 select,
-			.wrapper.style2 textarea {
-				background: rgba(255, 255, 255, 0.075);
-				border-color: rgba(255, 255, 255, 0.5);
-			}
-
-				.wrapper.style2 input[type="text"]:focus,
-				.wrapper.style2 input[type="password"]:focus,
-				.wrapper.style2 input[type="email"]:focus,
-				.wrapper.style2 select:focus,
-				.wrapper.style2 textarea:focus {
-					border-color: #c80000;
-					box-shadow: 0 0 0 1px #c80000;
-				}
-
-			.wrapper.style2 .select-wrapper:before {
-				color: rgba(255, 255, 255, 0.15);
-			}
-
-			.wrapper.style2 input[type="checkbox"] + label,
-			.wrapper.style2 input[type="radio"] + label {
-				color: #d5d5d5;
-			}
-
-				.wrapper.style2 input[type="checkbox"] + label:before,
-				.wrapper.style2 input[type="radio"] + label:before {
-					background: rgba(255, 255, 255, 0.075);
-					border-color: rgba(255, 255, 255, 0.15);
-				}
-
-			.wrapper.style2 input[type="checkbox"]:checked + label:before,
-			.wrapper.style2 input[type="radio"]:checked + label:before {
-				background-color: #c80000;
-				border-color: #c80000;
-				color: #ffffff;
-			}
-
-			.wrapper.style2 input[type="checkbox"]:focus + label:before,
-			.wrapper.style2 input[type="radio"]:focus + label:before {
-				border-color: #c80000;
-				box-shadow: 0 0 0 1px #c80000;
-			}
-
-			.wrapper.style2 ::-webkit-input-placeholder {
-				color: #bdbdbd !important;
-			}
-
-			.wrapper.style2 :-moz-placeholder {
-				color: #bdbdbd !important;
-			}
-
-			.wrapper.style2 ::-moz-placeholder {
-				color: #bdbdbd !important;
-			}
-
-			.wrapper.style2 :-ms-input-placeholder {
-				color: #bdbdbd !important;
-			}
-
-			.wrapper.style2 .formerize-placeholder {
-				color: #bdbdbd !important;
-			}
-
 			.wrapper.style2 ul.alt li {
 				border-top-color: rgba(255, 255, 255, 0.15);
 			}
@@ -2845,6 +2761,14 @@
 
 		#header {
 			min-width: 320px;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		#header .logo {
+			width: 100%;
 		}
 
 	}
@@ -3024,9 +2948,8 @@
 /* Banner */
 
 	#banner {
-		background-color: #c80000;
 		color: #f2a3a5;
-		padding: 13em 0 11em 0;
+		padding: 12em 0;
 		background-color: #0c0c0c;
 		background-image: url("../../images/banner.jpg");
 		background-size: cover;
@@ -3066,69 +2989,37 @@
 			border-bottom-color: #fff;
 		}
 
-		#banner input[type="submit"],
-		#banner input[type="reset"],
-		#banner input[type="button"],
-		#banner button,
 		#banner .button {
 			background-color: #5a5a5a;
 			color: #ffffff !important;
 		}
 
-			#banner input[type="submit"]:hover,
-			#banner input[type="reset"]:hover,
-			#banner input[type="button"]:hover,
-			#banner button:hover,
 			#banner .button:hover {
 				background-color: #676767;
 			}
 
-			#banner input[type="submit"]:active,
-			#banner input[type="reset"]:active,
-			#banner input[type="button"]:active,
-			#banner button:active,
 			#banner .button:active {
 				background-color: #4d4d4d;
 			}
 
-			#banner input[type="submit"].alt,
-			#banner input[type="reset"].alt,
-			#banner input[type="button"].alt,
-			#banner button.alt,
 			#banner .button.alt {
 				background-color: transparent;
 				box-shadow: inset 0 0 0 2px #fff;
 				color: #ffffff !important;
 			}
 
-				#banner input[type="submit"].alt:hover,
-				#banner input[type="reset"].alt:hover,
-				#banner input[type="button"].alt:hover,
-				#banner button.alt:hover,
 				#banner .button.alt:hover {
 					background: rgba(255, 255, 255, 0.25);
 				}
 
-				#banner input[type="submit"].alt:active,
-				#banner input[type="reset"].alt:active,
-				#banner input[type="button"].alt:active,
-				#banner button.alt:active,
 				#banner .button.alt:active {
 					background-color: rgba(255, 255, 255, 0.2);
 				}
 
-				#banner input[type="submit"].alt.icon:before,
-				#banner input[type="reset"].alt.icon:before,
-				#banner input[type="button"].alt.icon:before,
-				#banner button.alt.icon:before,
 				#banner .button.alt.icon:before {
 					color: #f8d1d2;
 				}
 
-			#banner input[type="submit"].special,
-			#banner input[type="reset"].special,
-			#banner input[type="button"].special,
-			#banner button.special,
 			#banner .button.special {
 				background-color: #ffffff;
 				color: #c80000 !important;
@@ -3187,7 +3078,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#banner {
-				padding: 10em 0 8em 0;
+				padding: 15em 0;
 			}
 
 		}
@@ -3195,7 +3086,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 8em 0 6em 0;
+				padding: 12em 0;
 			}
 
 		}
@@ -3215,7 +3106,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 4em 0 2em 0;
+				padding: 8em 0;
 			}
 
 				#banner h1 {
@@ -3227,7 +3118,7 @@
 		@media screen and (max-width: 480px) {
 
 			#banner {
-				padding: 5em 0 3em 0;
+				padding: 6em 0;
 			}
 
 				#banner ul {
@@ -3401,43 +3292,14 @@
 /* Footer */
 
 	#footer {
-		background-color: #c80000;
-		color: #f2a3a5;
-		padding: 4em 0 2em 0;
-		background: #c80000;
+		padding: 3em 0 2em 0;
+		color: #000;
+		border-top: 5px solid #000;
+		font-weight: 300;
 	}
 
-		#footer input, #footer select, #footer textarea {
-			color: #ffffff;
-		}
-
 		#footer a {
-			color: #ffffff;
-		}
-
-		#footer strong, #footer b {
-			color: #ffffff;
-		}
-
-		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #fff;
-		}
-
-		#footer blockquote {
-			border-left-color: #fff;
-		}
-
-		#footer code {
-			background: none;
-			border-color: #fff;
-		}
-
-		#footer hr {
-			border-bottom-color: #fff;
-		}
-
-		#footer label {
-			color: #ffffff;
+			color: #c80000;
 		}
 
 		#footer .inner {
@@ -3468,7 +3330,7 @@
 		@media screen and (max-width: 980px) {
 
 			#footer {
-				padding: 4em 0 2em 0;
+				padding: 2em 0 1em 0;
 			}
 
 		}
