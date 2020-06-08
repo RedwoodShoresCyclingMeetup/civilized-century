@@ -2763,6 +2763,11 @@
 			min-width: 320px;
 		}
 
+		#header .logo img {
+			height: 35px;
+			margin-top: .8em;
+		}
+
 	}
 
 	@media screen and (max-width: 980px) {
@@ -2829,6 +2834,13 @@
 
 			.navPanelToggle {
 				right: 1em;
+			}
+
+		}
+		@media screen and (max-width: 480px) {
+
+			.navPanelToggle {
+				right: 0;
 			}
 
 		}
