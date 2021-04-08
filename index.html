@@ -11,6 +11,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<script
+			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+			  crossorigin="anonymous"></script>
+		<script>
+			var numberBanners = 0;
+			function changeBanner() {
+				var currentBanner = $("#banner .banner:visible").index();
+				$("#banner .banner").eq(currentBanner).fadeOut(2500);
+				var nextBanner = currentBanner < (numberBanners-1) ? currentBanner + 1 : 0;
+				$("#banner .banner").eq(nextBanner).fadeIn(2500);
+			}
+			window.onload = function() {
+				numberBanners = $("#banner").children().length;
+				changeBanner();
+				setInterval(changeBanner, 7500)
+			};
+		</script>
 	</head>
 	<body>
 
@@ -34,8 +52,9 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<div class="inner">
-				</div>
+				<img class="banner banner-1" src="/images/banners/banner1.jpg" />
+				<img class="banner banner-2" src="/images/banners/banner2.jpg" />
+				<img class="banner banner-3" src="/images/banners/banner3.jpg" />
 			</section>
 
 		<!-- Main -->
