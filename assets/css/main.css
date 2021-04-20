@@ -2968,6 +2968,7 @@
 		background-position: 0% 0%;
 		text-align: left;
 		position: relative;
+		overflow: hidden;
 		z-index: 9999;
 	}
 
@@ -2979,7 +2980,6 @@
 		transform: translate(-50%,0);
 		height: 100%;
 		width: auto;
-		overflow: hidden;
 		text-align: center;
 	}
 
