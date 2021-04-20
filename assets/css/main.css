@@ -3255,6 +3255,7 @@
 	width: 100%;
 	z-index: 99999;
 	background-color: rgba(255, 255, 255, .5);
+	overflow: scroll;
 }
 
 	#registerModal .inner {
