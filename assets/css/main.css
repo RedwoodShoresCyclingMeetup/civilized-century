@@ -3241,3 +3241,21 @@
 			}
 
 		}
+
+#registerModal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 99999;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+	#registerModal .inner {
+		position: relative;
+		margin: 5% auto 0 auto;
+		border: 1px solid black;
+		box-shadow: 0 0 25px 5px #444;
+	}

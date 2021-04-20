@@ -46,7 +46,7 @@
 						<a href="routes.html">Routes</a>
 						<a href="parking.html">Parking</a>
 						<a href="support.html">Support</a>
-						<a href="participate.html">Participate</a>
+						<a href="gallery.html">Gallery</a>
 					</nav>
 				</div>
 			</header>
@@ -86,7 +86,7 @@
 								<li>No huge registration fee - it's a "paltry" $30.</li>
 							</ul>
 							<p>The course offers scenic views of the Peninsula Bay Area, a jaunt across Dumbarton Bridge, loop around Facebook campus, and a few hidden trails. Designed for safety, the South Bay section is clockwise to minimize left turns. And an overall portion of the course is trail, bike lane, or low car traffic.</p>
-							<a href="/participate.html#register" class="button special">Register to Ride</a>&nbsp;&nbsp;<span><span style="color:red">Registration opens July 1st!</span></span>
+							<a id="registerButton" href="#" class="button special">Register to Ride</a>&nbsp;&nbsp;<span><span style="color:red">Registration opens July 1st!</span></span>
 						</div>
 					</article>
 					<article>
@@ -108,6 +108,42 @@
 			<section id="footer" class="houndstooth">
 				<div class="inner">
 					<p class="right">The "Civilized Century" is a cycling event organized by the <a href="https://www.meetup.com/Redwood-Shores-Cycling-Meetup/">Redwood Shores Cycling Meetup</a>.</p>
+				</div>
+			</section>
+
+			<section id="registerModal">
+				<div class="inner">
+					<div id="eventbrite-widget-container-151006912741"></div>
+
+					<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+					<script type="text/javascript">
+						var exampleCallback = function() {
+							console.log('Order complete!');
+							$('#registerButton').hide();
+						};
+
+						window.EBWidgets.createWidget({
+							// Required
+							widgetType: 'checkout',
+							eventId: '151006912741',
+							iframeContainerId: 'eventbrite-widget-container-151006912741',
+
+							// Optional
+							iframeContainerHeight: 800,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+							onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+						});
+
+						$('#registerButton').click(function(e) {
+							e.preventDefault();
+							$('#registerModal').show();
+						});
+
+						$('#registerModal').click(function(e) {
+							console.log("modal clicked");
+							$('#registerModal').hide();
+						});
+					</script>
 				</div>
 			</section>
 
