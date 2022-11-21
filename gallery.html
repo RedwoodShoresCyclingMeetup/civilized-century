@@ -11,6 +11,33 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="assets/css/baguetteBox.css">
+
+		<!-- TODO Move CSS to separate file -->
+		<style>
+			.gallery {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.gallery a {
+				margin-bottom: 1rem;
+				margin-right: 1rem;
+			}
+
+			.gallery img {
+                object-fit: cover;
+                width: 300px;
+                height: 300px;
+				border: black solid 1px;
+				border-radius: 10px;
+			}
+
+			svg {
+				fill: currentColor;
+			}
+		</style>
 	</head>
 	<body>
 
@@ -40,17 +67,60 @@
 					</header>
 				</div>
 			</section>
-			<section id="two" class="light-gray">
+			<section id="one" class="light-gray">
 				<div class="inner">
 					<article>
 						<div class="content">
 							<header class="major special">
-								<h2>Photo Gallery</h2>
-							</header>							
-							<p><a href="https://www.yogile.com/civilizedcentury/upload">To Photos</a></p>
-														
+								<h2>2022 Photo Gallery</h2>
+							</header>
+
+							<article class="gallery cc2022">
+								<a href="assets/photos/2022/20220807_081949.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/20220807_081949.jpg"/>
+								</a>
+
+								<a href="assets/photos/2022/20220807_092445.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/20220807_092445.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010580.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010580.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010602.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010602.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010603.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010603.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010614.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010614.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010665.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010665.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010671.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010671.jpg"/>
+								</a>
+								<a href="assets/photos/2022/PXL_20220807_163406488.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/PXL_20220807_163406488.jpg"/>
+								</a>
+
+							</article>
+							<p>
+								<a href="https://www.yogile.com/civilizedcentury/" target="_blank">View all the photos for this event
+									<img src="images/external-link.svg" height="14rem">
+								</a>
+								or
+								<a href="https://www.yogile.com/civilizedcentury/upload" target="_blank">upload your photos of it
+									<img src="images/external-link.svg" height="14rem">
+								</a>
+							</p>
 						</div>
 					</article>
+			</section>
+
+			<section id="two">
+				<div class="inner">
 					<article>
 						<div class="content">
 							<header class="major special">
@@ -71,7 +141,8 @@
 					</article>
 				</div>
 			</section>
-			<section id="one">
+
+			<section id="one" class="light-gray">
 				<div class="inner">
 					<article>
 						<div class="content">
@@ -100,6 +171,12 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/baguetteBox.js" async></script>
+			<script src="assets/js/highlight.min.js" async></script>
+			<script>
+				window.onload = function() {
+					baguetteBox.run('.cc2022');
+				};
+			</script>
 	</body>
 </html>
