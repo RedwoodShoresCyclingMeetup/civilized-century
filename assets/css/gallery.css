@@ -1,0 +1,18 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery a {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.gallery img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border: black solid 1px;
+    border-radius: 10px;
+}
