@@ -16,3 +16,28 @@
     border: black solid 1px;
     border-radius: 10px;
 }
+
+
+/* Font and styles required to create a Yogile-themed button */
+
+@font-face {
+    font-family: "SourceSansPro-SemiBold";
+    src: url("/assets/fonts/SourceSansPro-SemiBold.ttf");
+}
+
+.yogile-button {
+    font-family: SourceSansPro-SemiBold;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to bottom, #5dacef, #51a2ec);
+    border: 1px solid #4d99db;
+    border-radius: 9rem;
+    padding: 0.3rem 1.6rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.yogile-button:hover {
+    color: white;
+    background: #467dd3;
+}
