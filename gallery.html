@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/gallery.css">
 		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="assets/css/baguetteBox.css">
 	</head>
 	<body>
 
@@ -38,22 +39,56 @@
 			<section id="main">
 				<div class="inner">
 					<header class="major special">
-						<h1>Gallery Options</h1>
+						<h1>Gallery</h1>
 					</header>
 				</div>
 			</section>
 			<section id="one" class="light-gray">
 				<div class="inner">
 					<article>
-						<p>The gallery page is currently under development and different implementations are available:</p>
+						<div class="content">
+							<header class="major special">
+								<h2>2022 Photo Gallery</h2>
+							</header>
 
-						<p><a href="gallery1.html">Gallery 1</strong></a> - displays a small group of thumbnails as a grid. Clicking any thumbnail brings up a larger version of it. Left and right buttons allow the user to move between larger images. Navigating left on the first image takes you to the last and vice versa. The larger images can be navigated using the keyboard's left and right arrows.<br>
-						Notes for Darius: the larger images do not loop from last to first (or vice versa) if using touch gestures.
-						</p>
+							<article class="gallery cc2022">
+								<a href="assets/photos/2022/20220807_081949.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/20220807_081949.jpg"/>
+								</a>
 
-						<p><a href="gallery2.html">Gallery 2</strong></a> - displays one row of thumbnails which can be navigated through using left and right arrows. Navigating left on the first thumbnail takes you to the last and vice versa. The gallery periodically moves right one thumbnail on a loop until the user presses the pause, left or right buttons. If the autoplay is paused, the pause button turns into a play button to restart the automation. The larger images work as for Gallery&nbsp;1.<br>
-						Possible future improvements: adjust the size and positioning of elements to work properly on screens with small widths (such as cellphones); and implement touch gestures to allow thumbnails to be navigated by swiping.<br>
-						Notes for Darius: make the JS work with multiple galleries and move the code into a separate file; move the CSS into a separate file; figure out how to get the inter-thumbnail gap programmatically; pause autoplay if a thumbnail is clicked; the larger images do not loop from last to first (or vice versa) if using touch gestures.</p>
+								<a href="assets/photos/2022/20220807_092445.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/20220807_092445.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010580.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010580.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010602.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010602.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010603.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010603.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010614.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010614.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010665.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010665.jpg"/>
+								</a>
+								<a href="assets/photos/2022/L1010671.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/L1010671.jpg"/>
+								</a>
+								<a href="assets/photos/2022/PXL_20220807_163406488.jpg" class="lightbox image" data-group="gallery2022">
+									<img alt="" src="assets/photos/2022/PXL_20220807_163406488.jpg"/>
+								</a>
+
+							</article>
+
+							<p>
+								<a href="https://www.yogile.com/civilizedcentury/" target="_blank" class="yogile-button">
+									More photos
+								</a>
+							</p>
+						</div>
 					</article>
 			</section>
 
@@ -63,5 +98,12 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/baguetteBox.js" async></script>
+			<script src="assets/js/highlight.min.js" async></script>
+			<script>
+				window.onload = function() {
+					baguetteBox.run('.cc2022', { loop: true });
+				};
+			</script>
 	</body>
 </html>
