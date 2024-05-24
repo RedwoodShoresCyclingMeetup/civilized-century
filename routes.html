@@ -37,14 +37,57 @@
 			</header>
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 
+
+
+			<!-- TODO Move this to the main CSS file -->
+			<style>
+				#routes_nav {
+					display: flex;
+
+					margin-top: 2em;
+					margin-bottom: 0;
+					margin-left: auto;
+					margin-right: auto;
+
+					font-family: "Lato", sans-serif;
+					font-size: 15pt;
+					font-weight: 300;
+					line-height: 2;
+
+					max-width: 65em;
+
+					border-bottom: black 1px solid;
+				}
+
+				#routes_nav a {
+					padding-right: 1em;
+					padding-left: 1em;
+					margin-right: 0.01em;
+					border: black 1px solid;
+					border-bottom: none;
+
+					border-top-left-radius: 15px 15px;
+					border-top-right-radius: 15px 15px;
+
+					font-style: none;
+					text-decoration: none;
+				}
+
+				#routes_nav #active-route {
+ 					border-bottom: none;
+					background-color: #f3f3f3;
+					margin-bottom: -1px;
+				}
+
+			</style>
+
+
 		<!-- Main -->
-			<section id="main">
-				<div class="inner">
-					<header class="major special">
-						<h1>Routes</h1>
-					</header>
-				</div>
-			</section>
+			<nav id="routes_nav">
+				<a href="routes.html" id="active-route">Routes Overview</a>
+				<a href="route-35.html">35 Miles</a>
+				<a href="route-60.html">60 Miles</a>
+			</nav>
 			<section id="one" class="light-gray">
 				<div class="inner">
 					<header class="major special">
