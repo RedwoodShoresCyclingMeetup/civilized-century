@@ -3341,3 +3341,26 @@
 		font-weight: bold;
 	}
 }
+#route_one {
+		padding: 4em 0;
+	color: green;
+	}
+
+		@media screen and (max-width: 980px) {
+
+			#route_one {
+				padding: 4em 0 2em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#main {
+				padding: 2em 0;
+			}
+			#route_one {
+				padding: 2em 0 0.1em 0;
+			}
+
+		}
