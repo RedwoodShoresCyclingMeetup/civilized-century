@@ -3288,7 +3288,6 @@
 		max-width: 65em;
 
 		border-bottom: black 1px solid;
-		background-color: #f3f3f3;
 	}
 
 	#routes-nav a {
@@ -3303,6 +3302,7 @@
 
 		font-style: none;
 		text-decoration: none;
+		background-color: #f3f3f3;
 	}
 
 	#routes-nav #active-route {
@@ -3331,7 +3331,6 @@
 	#routes-nav a {
 		padding-left: 0.5em;
 		display: block;
-/* 		border: black 1px solid; */
 		font-style: none;
 		text-decoration: none;
 	}
@@ -3417,10 +3416,6 @@
 
 		#route-two {
 			padding: 4em 0 2em 0;
-			background: -moz-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-			background: -webkit-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-			background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7',GradientType=0 );
 		}
 
 			#route-two .inner {
