@@ -3192,6 +3192,10 @@
 
 		}
 
+	#route-map {
+		padding: 4em 0;
+	}
+
 /* Footer */
 
 	#footer {
@@ -3263,4 +3267,215 @@
 		margin: 5% auto 0 auto;
 		border: 1px solid black;
 		box-shadow: 0 0 25px 5px #444;
+	}
+
+/* Navigation tabs for routes pages */
+
+@media screen and (min-width: 737px) {
+	#routes-nav {
+		display: flex;
+
+		margin-top: 2em;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+
+		font-family: "Lato", sans-serif;
+		font-size: 15pt;
+		font-weight: 300;
+		line-height: 2;
+
+		max-width: 65em;
+
+		border-bottom: black 1px solid;
+	}
+
+	#routes-nav a {
+		padding-right: 1em;
+		padding-left: 1em;
+		margin-right: 0.01em;
+		border: black 1px solid;
+		border-bottom: none;
+
+		border-top-left-radius: 15px 15px;
+		border-top-right-radius: 15px 15px;
+
+		font-style: none;
+		text-decoration: none;
+		background-color: #f3f3f3;
+	}
+
+	#routes-nav #active-route {
+		border-bottom: none;
+		background-color: white;
+		margin-bottom: -1px;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#routes-nav {
+		display: flex;
+		flex-direction: column;
+		flex: 1 1 auto;
+		background-color: #e8e8e8;
+
+		font-family: "Lato", sans-serif;
+		font-size: 12pt;
+		font-weight: 300;
+		line-height: 2;
+
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
+	#routes-nav a {
+		padding-left: 0.5em;
+		display: block;
+		font-style: none;
+		text-decoration: none;
+	}
+
+	#routes-nav #active-route {
+		background-color: #c83333;
+		color: #f3f3f3;
+		font-weight: bold;
+	}
+}
+
+#route-one {
+	padding: 2em 0 0 0;
+}
+
+		@media screen and (max-width: 980px) {
+			#route_one {
+				padding: 4em 0 2em 0;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+			#main {
+				padding: 2em 0;
+			}
+			#route_one {
+				padding: 2em 0 0.1em 0;
+			}
+		}
+
+#routes p {
+	margin-bottom: 1em;
+}
+
+#route-one p {
+	margin: 0;
+}
+
+#route-one h2 {
+	margin: 0;
+}
+
+#route-two {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+	#route-two figcaption {
+		font-style: italic;
+		text-align: center;
+		padding-bottom: 1em;
+	}
+
+	#route-two p {
+		line-height: 1.2;
+	}
+
+	#route-two .inner {
+		display: -ms-flexbox;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+		#route-two .inner article {
+			width: 50%;
+		}
+
+			#route-two .inner article:first-child {
+				padding-right: 6em;
+			}
+
+			#route-two .inner article:last-child {
+				padding-left: 6em;
+			}
+
+	@media screen and (max-width: 980px) {
+
+		#route-two {
+			padding: 4em 0 2em 0;
+		}
+
+			#route-two .inner {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				#route-two .inner article {
+					width: 100%;
+				}
+
+					#route-two .inner article:first-child {
+						padding-right: 0;
+						padding-bottom: 2em;
+					}
+
+					#route-two .inner article:last-child {
+						padding-left: 0;
+						padding-top: 2em;
+					}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#route-two {
+				padding: 2em 0 0.1em 0;
+			}
+
+		}
+
+	#route-two .route-distance-heading {
+		margin-bottom: 0;
+		padding-bottom: 0.5em;
+	}
+
+.route-list {
+	margin-bottom: 0.3em;
+}
+
+.route-ebike {
+	margin-top: 1.3em;
+}
+
+#route-map {
+	padding-top: 0;
+}
+
+#route-tidbits {
+	padding: 2em 0 0 0;
+}
+
+	#route-tidbits h3 {
+		color: black;
+		margin-bottom: 0.2em;
+	}
+
+	#route-tidbits p {
+		line-height: 1.2;
+		margin-bottom: 1.2em;
 	}
