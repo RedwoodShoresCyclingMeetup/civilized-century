@@ -16,6 +16,15 @@
 			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
 			  crossorigin="anonymous"></script>
 	</head>
+	<!-- MailerLite Universal -->
+	<script>
+    		(function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    		.push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    		n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    		(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    		ml('account', '1253612');
+	</script>
+	<!-- End MailerLite Universal -->
 	<body id="routes">
 
 		<!-- Header -->
@@ -95,7 +104,10 @@
 							<p class="route-list"><b>8am - 9am</b>: Pick up your bib and start your adventure</p>
 							<p class="route-list"><b>1pm-ish</b>: Start serving gluten-free mini-meal with veggie option</p>
 							<p class="route-list"><b>8pm</b>: The Septennial Civilized Century closes. <a href="https://www.yogile.com/civilizedcentury2024" target="_blank">Post your pics!</a></p>
-							<p><a id="registerButton" href="#" class="button special">Register to Ride</a> &nbsp; &nbsp; <span style="color:red">Registration opens May 3rd</span></p>
+							<!-- this button controls the email list -->
+							<div class="ml-embedded" data-form="HIHz80"></div>
+							<!-- remove the comment to activate the following button, exclammation and double dashes at the beginning and double dashes at the end -->
+							<p><!--a id="registerButton" href="#" class="button special">Register to Ride</a> &nbsp; &nbsp; <span style="color:red">TBD spots left</span--></p>
 						</div>
 					</article>
 				</div>
