@@ -2217,6 +2217,14 @@
 
 		}
 
+	.padding-bottom-zero {
+		padding-bottom: 1em !important;
+	}
+
+	.padding-top-zero {
+		padding-top: 0em !important;
+	}
+
 	header p {
 		position: relative;
 		margin: 0 0 1.5em 0;
